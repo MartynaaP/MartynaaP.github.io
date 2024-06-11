@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+    <title>Wybierz miasto</title>
+</head>
+<body>
+    <div class= home_page>
+        <h1>Witaj {{username}}! Tutaj sprawdzisz pogodę dla wybranego przez Ciebie miasta :)</h1>
+    </div>
+    <div class = info>
+         <p>Wybierz miasto z listy:
+    </p>
+    </div>
+<!--    <form action ='/pogoda' method = "POST">-->
+<!--        <div class = "miasto">-->
+<!--            <div class="miasto-screen">-->
+<!--                <div class = "miasto-title">-->
+<!--                    <h1> Wpisz nazwę miasta: </h1>-->
+<!--                </div>-->
+<!--                <div class="miasto-form">-->
+<!--                    <div class="miasto-group">-->
+<!--                        <input type="text" class="miasto-field" value="" placeholder="city" name="<miasto>">-->
+<!--                        <label class="miasto-field-icon fui-miasto" for="miasto-name"></label>-->
+<!--                    </div>-->
+<!--{% with messages = get_flashed_messages() %}-->
+<!--                            {% if messages %}-->
+<!--                              <ul id="error" class=flashes>-->
+<!--                              {% for message in messages %}-->
+<!--                                <li>{{ message }}</li>-->
+
+<!--                              {% endfor %}-->
+<!--                              </ul>-->
+<!--                            {% endif %}-->
+<!--                          {% endwith %}-->
+<!--&lt;!&ndash;                    <input type="submit" value="Log in" class="btn btn-primary btn-large btn-block">&ndash;&gt;-->
+
+<!--                </div>-->
+<!--            </div>-->
+
+<!--        </div>-->
+<!--    </form>-->
+
+            <h1>Pogoda w popularnych miastach polski</h1>
+        <ul>
+            <li>
+                <a href="/pogoda/Warsaw">Warszawa</a>
+            </li>
+            <li>
+                <a href="/pogoda/Koszalin">Koszalin</a>
+            </li>
+            <li>
+                <a href="/pogoda/Wroclaw">Wrocław</a>
+            </li>
+            <li>
+                <a href="/pogoda/Gdansk">Gdańsk</a>
+            </li>
+             <li>
+                <a href="/pogoda/Krakow">Kraków</a>
+            </li>
+            <li>
+                <a href="/pogoda/Lodz">Lódź</a>
+            </li>
+            <li>
+                <a href="/pogoda/Bydgoszcz">Bydgoszcz</a>
+            </li>
+            <li>
+                <a href="/pogoda/Gdynia">Gdynia</a>
+            </li>
+            <li>
+                <a href="/pogoda/Sopot">Sopot</a>
+            </li>
+            <li>
+                <a href="/pogoda/Szczecin">Szczecin</a>
+            </li>
+        </ul>
+  <div>
+    <a href="/wyloguj" class="btn2 btn2-primary btn2-large btn2-block">Log out</a>
+  </div>
+</body>
+</html>
